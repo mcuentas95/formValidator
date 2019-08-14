@@ -1,0 +1,25 @@
+.firstName{
+    display: grid;
+    width: 20%;
+    grid-template-columns: 135px 1.5fr;
+    color: #001e62;
+    font-size: 12px;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+    top: 25px;
+}
+
+#fname {
+ box-shadow: 0 0 0 1px #001e62;
+}
+
+.submit {
+    /* background-color: #00C5FF;
+    color: #001e62; */
+    /* width: 3.8%; */
+    position: relative;
+        left: 240px;
+        top: 90px;
+    }

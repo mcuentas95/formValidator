@@ -1,0 +1,70 @@
+<!-- FORM V1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: #E7E7E7;
+        }
+    </style>
+
+    <title>document</title>
+
+    <link rel="stylesheet" href="firstName.css">
+    <link rel="stylesheet" href="lastName.css">
+    <link rel="stylesheet" href="dob.css">
+</head>
+
+<body> 
+
+    <form action="register.php" id="registration" method="post">
+        
+                    <div class="firstName">
+                        <label for="firstName">FIRST NAME *</label> 
+                        <input type= "text" name = "firstName" id="fname"/>
+                    </div>
+                    
+                    <div class="lastName">
+                        <label for="lastName">LAST NAME *</label>
+                        <input type ="text" name = "lastName" id="lname"/>
+                    </div>
+
+                    <div class="dob">
+                        <label for="DOB">DATE OF BIRTH *</label>
+                        <input type="date" name="dob" id="dob"/>
+                    </div>
+
+                    <div class ="submit"> 
+                        <input type="submit" value="SUBMIT" style="font-size:8px;color:#001e62;font-weight:bold;background-color:#00C5FF;border: 1px solid #FFB600;padding-bottom:8px;padding-top:8px;padding-right:15px;padding-left:1px"/>
+                    </div>
+    </form>
+
+    <script>
+
+        var form = document.getElementById('registration');
+        form.onsubmit = function() {
+
+            if (form.firstName.value == '')
+            {
+                alert('missing first name');
+                return false;
+            }
+            else if (form.lastName.value =='')
+            {
+                alert('missing last name' )
+                return false;
+            }
+            else if (form.dob.value == '')
+            {
+                alert('missing date of birth');
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
+
+</body>
+
+</html> 

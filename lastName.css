@@ -1,0 +1,16 @@
+.lastName {
+    display: grid;
+    width: 20%;
+    grid-template-columns: 135px 1.5fr;
+    color: #001e62;
+    font-size: 12px;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+    top: 45px;
+}
+
+#lname {
+    box-shadow: 0 0 0 1px #001e62;
+   }
